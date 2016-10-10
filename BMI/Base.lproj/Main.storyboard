@@ -24,37 +24,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTD-3d-Kvp">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m88-n2-0pu">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ih-O2-ulB">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in KG" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grx-U5-vp6">
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Ttk-gJ-d5W"/>
-                                        </connections>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOw-db-0Hg">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height in m" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-HH-KnS">
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="iKo-6l-DKI"/>
-                                        </connections>
-                                    </textField>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="scale" translatesAutoresizingMaskIntoConstraints="NO" id="xFD-aA-duT">
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xFD-aA-duT" secondAttribute="height" multiplier="213:188" id="bSQ-pe-ceN"/>
@@ -82,6 +51,40 @@
                                     </imageView>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62u-gK-gWD"/>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPd-RQ-cdj"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m88-n2-0pu">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ih-O2-ulB">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight in KG" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grx-U5-vp6">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="Ttk-gJ-d5W"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOw-db-0Hg">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height in m" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OdR-HH-KnS">
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="iKo-6l-DKI"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.79841801349999997" green="1" blue="0.77637213979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -90,6 +93,7 @@
                                     <constraint firstItem="xFD-aA-duT" firstAttribute="leading" secondItem="WTD-3d-Kvp" secondAttribute="leading" constant="47" id="2J1-7H-8VW"/>
                                     <constraint firstItem="7Ih-O2-ulB" firstAttribute="top" secondItem="WTD-3d-Kvp" secondAttribute="top" constant="18" id="2dL-zp-3QZ"/>
                                     <constraint firstItem="dQP-mD-XLt" firstAttribute="width" secondItem="xFD-aA-duT" secondAttribute="width" id="3tD-ws-ysq"/>
+                                    <constraint firstItem="7Ih-O2-ulB" firstAttribute="centerX" secondItem="NPd-RQ-cdj" secondAttribute="centerX" id="FY1-Pm-sU2"/>
                                     <constraint firstItem="7Ih-O2-ulB" firstAttribute="leading" secondItem="OdR-HH-KnS" secondAttribute="trailing" constant="40" id="IBr-Fp-lRF"/>
                                     <constraint firstItem="DOw-db-0Hg" firstAttribute="centerY" secondItem="grx-U5-vp6" secondAttribute="centerY" id="Iv4-sH-w3z"/>
                                     <constraint firstItem="xFD-aA-duT" firstAttribute="height" secondItem="WTD-3d-Kvp" secondAttribute="height" multiplier="0.2" id="Jae-FL-CxT"/>
@@ -111,20 +115,21 @@
                                     <constraint firstItem="grx-U5-vp6" firstAttribute="width" secondItem="OdR-HH-KnS" secondAttribute="width" id="k4m-10-uE4"/>
                                     <constraint firstItem="xFD-aA-duT" firstAttribute="top" secondItem="dQP-mD-XLt" secondAttribute="bottom" constant="50" id="ptu-LJ-BrA"/>
                                     <constraint firstAttribute="trailing" secondItem="NPd-RQ-cdj" secondAttribute="trailing" constant="8" id="uQc-Ls-Ub2"/>
+                                    <constraint firstItem="7Ih-O2-ulB" firstAttribute="centerY" secondItem="ueq-jn-6zi" secondAttribute="centerY" id="wjz-3L-0lf"/>
                                     <constraint firstItem="DOw-db-0Hg" firstAttribute="top" secondItem="m88-n2-0pu" secondAttribute="bottom" constant="35" id="yK4-bL-rw5"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="m88-n2-0pu"/>
-                                        <exclude reference="7Ih-O2-ulB"/>
-                                        <exclude reference="grx-U5-vp6"/>
-                                        <exclude reference="DOw-db-0Hg"/>
-                                        <exclude reference="OdR-HH-KnS"/>
                                         <exclude reference="xFD-aA-duT"/>
                                         <exclude reference="dQP-mD-XLt"/>
                                         <exclude reference="ueq-jn-6zi"/>
                                         <exclude reference="62u-gK-gWD"/>
                                         <exclude reference="NPd-RQ-cdj"/>
+                                        <exclude reference="m88-n2-0pu"/>
+                                        <exclude reference="7Ih-O2-ulB"/>
+                                        <exclude reference="grx-U5-vp6"/>
+                                        <exclude reference="DOw-db-0Hg"/>
+                                        <exclude reference="OdR-HH-KnS"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="0m4-Tr-Mq3"/>
@@ -173,6 +178,7 @@
                                         <include reference="ueq-jn-6zi"/>
                                         <include reference="62u-gK-gWD"/>
                                         <include reference="NPd-RQ-cdj"/>
+                                        <include reference="7Ih-O2-ulB"/>
                                     </mask>
                                 </variation>
                             </view>
