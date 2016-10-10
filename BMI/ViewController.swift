@@ -10,13 +10,25 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    // we ignore this because we made a short code inside the map function
+    /*class func scaler(scale : Double) -> ((Int) -> Double) {
+        func doDiv(u : Int) -> Double {
+            return scale * Double(u)
+        }
+        return doDiv
+    }
+    
+    static let s100 = { (u : Int) -> Double in Double(u) * 0.01
+    }*/
+    
+    /* the function above does the same thing
     class func doDiv100(u : Int) -> Double {
         return Double(u) * 0.01
     }
     
     class func doDiv2(u: Int) -> Double {
         return Double(u) * 0.5
-    }
+    }*/
     
     // set the variables as optional because we want to declare a variable that is not set, not write random code to avoid error
     var weight : Double?
@@ -33,9 +45,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
         }
     }
     
-    // .map converts the array one by one
-    let listOfHeightsInM = Array(140...220).map(ViewController.doDiv100)
-    let listOfWeightsInKg = Array(80...240).map(ViewController.doDiv2)
+    // .map takes a data that is the same data type
+    let listOfHeightsInM = Array(140...220).map({Double($0) * 0.01})
+    let listOfWeightsInKg = Array(80...240).map({Double($0) * 0.5})
     
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var heightTextLabel: UITextField!
@@ -77,10 +89,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
         }
         
         // convert a free text field to a double
-        func conv(numString: String) -> Double? {
-            let result : Double? = NumberFormatter().number(from: numString)?.doubleValue
+        /*func conv(numString: String) -> Double? {
+            let result = NumberFormatter().number(from: numString)?.doubleValue
             return result
-        }
+        }*/
         
         // this test if this works to proceed to the next
         /*if let txt = textField.text {
@@ -95,11 +107,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegat
         } //end if
         */
         
+        let val = NumberFormatter().number(from: txt)?.doubleValue //let val = conv(numString: txt)
+        
         switch (textField) {
         case heightTextLabel:
-            self.height = conv(numString: txt)
+            self.height = val //self.height = conv(numString: txt)
         case weightTextField :
-            self.weight = conv(numString: txt)
+            self.weight = val //self.weight = conv(numString: txt)
         default:
             print("Somethign bad happened")
         } // end of switch
