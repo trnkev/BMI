@@ -18,36 +18,29 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Banner" translatesAutoresizingMaskIntoConstraints="NO" id="m6S-k7-IEk"/>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4na-Iw-5iO">
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="scale" translatesAutoresizingMaskIntoConstraints="NO" id="ba0-C9-4I5">
-                                        <frame key="frameInset" minX="81" minY="377" width="214" height="188"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="scale" translatesAutoresizingMaskIntoConstraints="NO" id="ba0-C9-4I5">
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ba0-C9-4I5" secondAttribute="height" multiplier="213:188" id="hjU-OI-Lr9"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="tape" translatesAutoresizingMaskIntoConstraints="NO" id="Ua6-xE-yji">
-                                        <frame key="frameInset" minX="81" minY="137" width="214" height="190"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="tape" translatesAutoresizingMaskIntoConstraints="NO" id="Ua6-xE-yji">
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ua6-xE-yji" secondAttribute="height" multiplier="71:63" id="7Xw-E5-EID"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-MQ-eXO">
-                                        <frame key="frameInset" minX="81" minY="615" width="214" height="200"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="dKy-MQ-eXO">
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="dKy-MQ-eXO" secondAttribute="height" multiplier="213:200" id="aW0-L3-U3P"/>
                                         </constraints>
                                     </imageView>
-                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nQD-d8-axN">
-                                        <frame key="frameInset" minX="352" minY="124.5" width="408" height="216"/>
-                                    </pickerView>
-                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8al-CN-la9">
-                                        <frame key="frameInset" minX="352" minY="362.5" width="408" height="216"/>
-                                    </pickerView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQD-d8-axN"/>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8al-CN-la9"/>
                                 </subviews>
                                 <color key="backgroundColor" red="0.79841801349999997" green="1" blue="0.77637213979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -135,6 +128,24 @@
                                     <constraint firstItem="OdR-HH-KnS" firstAttribute="leading" secondItem="m88-n2-0pu" secondAttribute="trailing" constant="21.5" id="elk-nY-Ya5"/>
                                     <constraint firstItem="grx-U5-vp6" firstAttribute="width" secondItem="OdR-HH-KnS" secondAttribute="width" id="k4m-10-uE4"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="m88-n2-0pu"/>
+                                        <exclude reference="7Ih-O2-ulB"/>
+                                        <exclude reference="OdR-HH-KnS"/>
+                                        <exclude reference="grx-U5-vp6"/>
+                                        <exclude reference="DOw-db-0Hg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="m88-n2-0pu"/>
+                                        <include reference="7Ih-O2-ulB"/>
+                                        <include reference="OdR-HH-KnS"/>
+                                        <include reference="grx-U5-vp6"/>
+                                        <include reference="DOw-db-0Hg"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2016 Kevin Tran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1w1-QZ-xNG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -144,7 +155,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WTD-3d-Kvp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="2qB-Wn-N6a"/>
+                            <constraint firstItem="WTD-3d-Kvp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="2qB-Wn-N6a"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GJa-ZE-uBW" secondAttribute="trailing" constant="-16" id="2x6-qf-0D9"/>
                             <constraint firstItem="4na-Iw-5iO" firstAttribute="top" secondItem="m6S-k7-IEk" secondAttribute="bottom" id="7YS-mO-tK9"/>
                             <constraint firstItem="m6S-k7-IEk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="L56-ol-gTe"/>
@@ -155,7 +166,7 @@
                             <constraint firstItem="1w1-QZ-xNG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vem-pN-g8i"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4na-Iw-5iO" secondAttribute="trailing" constant="-20" id="YGT-XF-n7z"/>
                             <constraint firstItem="WTD-3d-Kvp" firstAttribute="top" secondItem="GJa-ZE-uBW" secondAttribute="bottom" id="Ys8-ko-rVc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="WTD-3d-Kvp" secondAttribute="trailing" constant="-16" id="bgY-bx-g4O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WTD-3d-Kvp" secondAttribute="trailing" constant="-20" id="bgY-bx-g4O"/>
                             <constraint firstItem="GJa-ZE-uBW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="fgM-AO-ZWQ"/>
                             <constraint firstItem="GJa-ZE-uBW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="gg1-BG-cHT"/>
                             <constraint firstItem="4na-Iw-5iO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="iHj-o3-0MR"/>
@@ -182,7 +193,7 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
-                                <include reference="4na-Iw-5iO"/>
+                                <exclude reference="4na-Iw-5iO"/>
                                 <exclude reference="WTD-3d-Kvp"/>
                             </mask>
                         </variation>
@@ -199,7 +210,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Banner" width="676" height="169"/>
+        <image name="Banner" width="360" height="85"/>
         <image name="heart" width="213" height="200"/>
         <image name="scale" width="213" height="188"/>
         <image name="tape" width="213" height="189"/>
