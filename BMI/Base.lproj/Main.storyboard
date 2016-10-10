@@ -69,8 +69,18 @@
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62u-gK-gWD"/>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPd-RQ-cdj"/>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="62u-gK-gWD">
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="Y45-2s-4Gd"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="aeA-EK-GtA"/>
+                                        </connections>
+                                    </pickerView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPd-RQ-cdj">
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="2is-OB-jd3"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="4J2-JP-8Yc"/>
+                                        </connections>
+                                    </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m88-n2-0pu">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -334,7 +344,9 @@
                     </view>
                     <connections>
                         <outlet property="bmiLabel" destination="7Ih-O2-ulB" id="IYa-aK-YDZ"/>
+                        <outlet property="heightPickerView" destination="62u-gK-gWD" id="mnc-23-Hbo"/>
                         <outlet property="heightTextLabel" destination="OdR-HH-KnS" id="chR-GE-sh7"/>
+                        <outlet property="weightPickerView" destination="NPd-RQ-cdj" id="6Jb-Aj-SwK"/>
                         <outlet property="weightTextField" destination="grx-U5-vp6" id="srU-ae-cHu"/>
                     </connections>
                 </viewController>
